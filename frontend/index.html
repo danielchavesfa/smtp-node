@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Dev | Contato</title>
+  </head>
+  <body>
+    <section id="contact" class="contact" aria-labelledby="contact_title">
+      <div class="container">
+        <h1 id="contact_title" class="section_title">Contato</h1>
+        <p>Envie uma mensagem como nos velhos tempos... 📧</p>
+        <form action="#" id="contact_form" method="post">
+          <div class="form-control">
+            <label for="senderName">Nome:</label>
+            <input
+              type="text"
+              name="senderName"
+              id="senderName"
+              placeholder="Elon Musk"
+              autocomplete="given-name"
+              required
+            />
+            <p hidden></p>
+          </div>
+          <div class="form-control">
+            <label for="senderEmail">Email:</label>
+            <input
+              type="email"
+              name="senderEmail"
+              id="senderEmail"
+              placeholder="elonmusk@tesla.com"
+              autocomplete="email"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="senderMessage">Mensagem:</label>
+            <textarea
+              name="senderMessage"
+              id="senderMessage"
+              placeholder="Hello there 👋"
+              cols="40"
+              rows="10"
+              required
+            ></textarea>
+          </div>
+          <input id="sendButton" type="submit" value="Enviar Mensagem" />
+        </form>
+      </div>
+    </section>
+    <script type="module" src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(#6316ac, #170674);
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+.container {
+  max-width: 800px;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.section_title {
+  font-size: 3rem;
+  position: relative;
+  line-height: 1.25;
+  margin-left: 10px;
+  margin-bottom: 2rem;
+}
+
+.section_title::before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background-color: #df3a9a;
+  margin-left: -10px;
+}
+
+#contact p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+#contact_form > .form-control {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.form-control > label {
+  font-size: 1rem;
+  margin-bottom: .5rem;
+  font-weight: 600;
+}
+
+.form-control > input[type='email'] {
+  font-style: italic;
+}
+
+.form-control > input,
+textarea {
+  margin-bottom: 1rem;
+  padding: .5rem;
+  font-family: inherit;
+  font-size: 1rem;
+  border: 2px solid #6316ac;
+  border-radius: 4px;
+}
+
+.form-control > input:focus,
+textarea:focus,
+#contact_form #sendButton:focus {
+  outline: 1px solid #7b25cc;
+}
+
+textarea {
+  max-width: 800px;
+}
+
+#contact_form #sendButton {
+  padding: .875rem 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: monospace;
+  color: #fff;
+  background-image: linear-gradient(-30deg, #6316ac, #df3a9a);
+  letter-spacing: 2px;
+  border-radius: 12px;
+  border: 1px solid #170674;
+  text-transform: uppercase;
+  box-shadow: 1px 2px 0 rgba(0, 0, 0, .1);
+  transition: ease .3s;
+  cursor: pointer;
+}
+
+#contact_form #sendButton:hover {
+  box-shadow: 2px 4px 0 rgba(0, 0, 0, 100);
+}
